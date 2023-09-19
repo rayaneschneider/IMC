@@ -10,11 +10,19 @@
     <h1 class="titulo">CALCULAR IMC DE:</h1>
     <p class="testo-imc">
         <script>
-            function calcular(peso,altura){ 
-            return peso/(altura **2);
-        </script>
-
-    </p>
-    
-</body>
-</html>
+            function calcular(peso,altura) { 
+                return peso /(altura ** 2);
+            }
+            alert("CLIQUE EM OK PARA COMECAR");
+            let nome =prompt("qual seu nome?");
+            let peso =prompt(nome +",qual o seu peso?");
+            let autura =prompt(nome +",qual a sua altura?");
+            let calculo =calcular(peso,autura);
+            let texto = ",seu IMC é:";
+            let imc = calculo .toFixed(2);
+            document.write(nome.italics()+ texto.bold ()+imc.fontcolor("blue"));
+            </script>
+    <!--termino do Script Javs-->
+            </p>
+    </body>
+    </html>
